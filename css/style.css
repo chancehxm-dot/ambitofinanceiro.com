@@ -213,6 +213,24 @@ img {
   justify-content: center;
 }
 
+.ad-slot-banner {
+  max-width: 728px;
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto 20px;
+}
+
+.ad-slot-in-content {
+  max-width: 728px;
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px auto;
+}
+
 /* ============================================
    Hero Section
    ============================================ */
