@@ -36,85 +36,85 @@
 
   <!-- Insurance Articles -->
   <url>
-    <loc>https://ambitofinanceiro.com/insurance-article-1</loc>
+    <loc>https://ambitofinanceiro.com/insurance/article-1</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://ambitofinanceiro.com/insurance-article-2</loc>
+    <loc>https://ambitofinanceiro.com/insurance/article-2</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://ambitofinanceiro.com/insurance-article-3</loc>
+    <loc>https://ambitofinanceiro.com/insurance/article-3</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <!-- Legal Services Articles -->
   <url>
-    <loc>https://ambitofinanceiro.com/legal-services-article-1</loc>
+    <loc>https://ambitofinanceiro.com/legal-services/article-1</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://ambitofinanceiro.com/legal-services-article-2</loc>
+    <loc>https://ambitofinanceiro.com/legal-services/article-2</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://ambitofinanceiro.com/legal-services-article-3</loc>
+    <loc>https://ambitofinanceiro.com/legal-services/article-3</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <!-- SaaS & IT Articles -->
   <url>
-    <loc>https://ambitofinanceiro.com/saas-it-article-1</loc>
+    <loc>https://ambitofinanceiro.com/saas-it/article-1</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://ambitofinanceiro.com/saas-it-article-2</loc>
+    <loc>https://ambitofinanceiro.com/saas-it/article-2</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://ambitofinanceiro.com/saas-it-article-3</loc>
+    <loc>https://ambitofinanceiro.com/saas-it/article-3</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <!-- Personal Finance Articles -->
   <url>
-    <loc>https://ambitofinanceiro.com/personal-finance-article-1</loc>
+    <loc>https://ambitofinanceiro.com/personal-finance/article-1</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://ambitofinanceiro.com/personal-finance-article-2</loc>
+    <loc>https://ambitofinanceiro.com/personal-finance/article-2</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://ambitofinanceiro.com/personal-finance-article-3</loc>
+    <loc>https://ambitofinanceiro.com/personal-finance/article-3</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <!-- Online Education Articles -->
   <url>
-    <loc>https://ambitofinanceiro.com/online-education-article-1</loc>
+    <loc>https://ambitofinanceiro.com/online-education/article-1</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://ambitofinanceiro.com/online-education-article-2</loc>
+    <loc>https://ambitofinanceiro.com/online-education/article-2</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://ambitofinanceiro.com/online-education-article-3</loc>
+    <loc>https://ambitofinanceiro.com/online-education/article-3</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
