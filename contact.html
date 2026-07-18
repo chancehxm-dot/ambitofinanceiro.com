@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | FinancePulse</title>
+  <meta name="description" content="Get in touch with the FinancePulse team. Reach out for inquiries, feedback, press, or partnership opportunities.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ambitofinanceiro.com/contact">
+  <meta property="og:title" content="Contact Us | FinancePulse">
+  <meta property="og:description" content="Get in touch with the FinancePulse team. Reach out for inquiries, feedback, press, or partnership opportunities.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ambitofinanceiro.com/contact">
+  <meta property="og:site_name" content="FinancePulse">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Contact Us | FinancePulse">
+  <meta name="twitter:description" content="Get in touch with the FinancePulse team. Reach out for inquiries, feedback, press, or partnership opportunities.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="top-bar">
+    <div class="container">
+      <span class="date" id="currentDate"></span>
+      <span class="tagline">Financial &amp; Business Intelligence</span>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">FINANCEPULSE<span class="edition">International Edition</span></a>
+      </div>
+    </div>
+  </header>
+  <nav class="main-nav">
+    <div class="container">
+      <a href="index.html">Home</a>
+      <a href="insurance.html">Insurance</a>
+      <a href="legal-services.html">Legal Services</a>
+      <a href="saas-it.html">SaaS &amp; IT</a>
+      <a href="personal-finance.html">Personal Finance</a>
+      <a href="online-education.html">Online Education</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="legal-page">
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a><span>&#8250;</span>Contact Us
+      </div>
+      <h1>Contact Us</h1>
+
+      <p>We would love to hear from you. Whether you have a question about our content, feedback on an article, a story idea, a partnership proposal, or a press inquiry, the FinancePulse team is here to help.</p>
+      <p>You can reach us directly by email or use the contact form below. We strive to respond to all inquiries within 24 to 48 hours.</p>
+
+      <h2>Email</h2>
+      <p>For general inquiries: <strong>contact@ambitofinanceiro.com</strong></p>
+
+      <h2>Send Us a Message</h2>
+      <form class="contact-form" method="POST" action="#">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your full name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="What is this regarding?" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Tell us how we can help you..." required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">FINANCEPULSE</div>
+          <div class="footer-edition">International Edition</div>
+          <p>FinancePulse is a premium source for cutting-edge news, analysis, and insights on Finance, Technology, Insurance, Legal Services, and Online Education.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Sections</h4>
+          <ul>
+            <li><a href="insurance.html">Insurance</a></li>
+            <li><a href="legal-services.html">Legal Services</a></li>
+            <li><a href="saas-it.html">SaaS &amp; IT</a></li>
+            <li><a href="personal-finance.html">Personal Finance</a></li>
+            <li><a href="online-education.html">Online Education</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms-of-service.html">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        &copy; 2026 FinancePulse. All rights reserved.
+      </div>
+    </div>
+  </footer>
+  <script>
+    (function() {
+      var now = new Date();
+      var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+      var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+      var dateEl = document.getElementById('currentDate');
+      if (dateEl) {
+        dateEl.textContent = days[now.getDay()] + ', ' + months[now.getMonth()] + ' ' + now.getDate() + ', ' + now.getFullYear();
+      }
+    })();
+  </script>
+</body>
+</html>
