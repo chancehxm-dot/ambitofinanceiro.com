@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finance Journal | Real-Time Market Data, Research &amp; Analytics Dashboard</title>
+  <meta name="description" content="Finance Journal delivers real-time market data, investment research, economic indicators, wealth analytics, and fintech intelligence through a powerful data-driven dashboard.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ambitofinanceiro.com/journal/">
+  <meta property="og:title" content="Finance Journal | Market Data &amp; Analytics Dashboard">
+  <meta property="og:description" content="Real-time market data, investment research, economic indicators, and fintech intelligence.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ambitofinanceiro.com/journal/">
+  <meta property="og:site_name" content="FinancePulse">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Finance Journal | Market Data &amp; Analytics">
+  <meta name="twitter:description" content="Real-time market data, investment research, and fintech intelligence dashboard.">
+  <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+
+  <!-- Top Status Bar -->
+  <div class="status-bar">
+    <div class="container">
+      <div class="status-item"><span class="status-dot live"></span> MARKET OPEN</div>
+      <div class="status-item">S&amp;P 500 <span class="value-up">5,823.10 +1.2%</span></div>
+      <div class="status-item">NASDAQ <span class="value-up">18,340.50 +1.8%</span></div>
+      <div class="status-item">BTC/USD <span class="value-up">$81,450.20 +4.5%</span></div>
+      <div class="status-item">VIX <span class="value-down">14.20 -5.3%</span></div>
+      <div class="status-item" id="currentTime"></div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html"><span class="accent">FINANCE</span> JOURNAL<span class="dot">.</span></a>
+      </div>
+      <span class="tagline">Data-Driven Market Intelligence</span>
+      <div class="header-date" id="currentDate"></div>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="main-nav">
+    <div class="container">
+      <a href="market-data/index.html">Market Data</a>
+      <a href="investment-research/index.html">Investment Research</a>
+      <a href="economic-indicators/index.html">Economic Indicators</a>
+      <a href="wealth-analytics/index.html">Wealth Analytics</a>
+      <a href="tech-finance/index.html">Tech Finance</a>
+      <a href="../index.html" class="nav-external">FinancePulse Home</a>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <!-- Live Ticker -->
+    <div class="mini-ticker">
+      <div class="ticker-item">
+        <div class="ticker-symbol">S&amp;P 500</div>
+        <div class="ticker-price">5,823.10</div>
+        <div class="ticker-change value-up">+1.2%</div>
+      </div>
+      <div class="ticker-item">
+        <div class="ticker-symbol">NASDAQ</div>
+        <div class="ticker-price">18,340.50</div>
+        <div class="ticker-change value-up">+1.8%</div>
+      </div>
+      <div class="ticker-item">
+        <div class="ticker-symbol">DOW JONES</div>
+        <div class="ticker-price">41,200.00</div>
+        <div class="ticker-change value-down">-0.3%</div>
+      </div>
+      <div class="ticker-item">
+        <div class="ticker-symbol">BTC/USD</div>
+        <div class="ticker-price">$81,450.20</div>
+        <div class="ticker-change value-up">+4.5%</div>
+      </div>
+      <div class="ticker-item">
+        <div class="ticker-symbol">GOLD</div>
+        <div class="ticker-price">$2,450.00</div>
+        <div class="ticker-change value-down">-0.1%</div>
+      </div>
+    </div>
+
+    <!-- Dashboard Hero -->
+    <div class="dashboard-hero">
+      <div class="hero-feature">
+        <img src="images/market-data-article-1.jpg" alt="Volatility Index Analysis" class="hero-feature-image">
+        <div class="hero-feature-body">
+          <span class="hero-label">FEATURED ANALYSIS</span>
+          <h2 class="hero-title">VIX at 14.20: Decoding Volatility Signals for Q3 Positioning</h2>
+          <p class="hero-excerpt">The CBOE Volatility Index has dropped to its lowest level since February. Our quantitative models identify three scenarios for the months ahead.</p>
+        </div>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-card">
+          <div class="stat-label">Market Sentiment</div>
+          <div class="stat-value up">BULLISH</div>
+          <div class="stat-change up">Sentiment Score: 72/100</div>
+          <div class="stat-subtitle">Based on composite indicators</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Fear &amp; Greed Index</div>
+          <div class="stat-value accent">68</div>
+          <div class="stat-change up">GREED</div>
+          <div class="stat-subtitle">7-day moving average</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Key Stats Row -->
+    <div class="stats-row">
+      <div class="stat-highlight">
+        <div class="stat-icon">&#128200;</div>
+        <div class="stat-number up">+24.8%</div>
+        <div class="stat-desc">S&amp;P 500 YTD Return</div>
+      </div>
+      <div class="stat-highlight">
+        <div class="stat-icon">&#128178;</div>
+        <div class="stat-number">$6.2T</div>
+        <div class="stat-desc">Global M&amp;A Volume 2026</div>
+      </div>
+      <div class="stat-highlight">
+        <div class="stat-icon">&#127758;</div>
+        <div class="stat-number down">3.1%</div>
+        <div class="stat-desc">US Inflation Rate (CPI)</div>
+      </div>
+      <div class="stat-highlight">
+        <div class="stat-icon">&#128269;</div>
+        <div class="stat-number">4.85%</div>
+        <div class="stat-desc">10Y Treasury Yield</div>
+      </div>
+    </div>
+
+    <!-- Ad Slot -->
+    <div class="ad-slot ad-slot-banner"></div>
+
+    <!-- Market Data Section -->
+    <div class="section-header">
+      <span class="section-header-title"><span class="icon">&#9776;</span> Market Data</span>
+      <a href="market-data/index.html" class="section-header-link">View All Data &#8594;</a>
+    </div>
+    <div class="card-grid">
+      <article class="card">
+        <div class="card-image-wrap">
+          <span class="card-badge">VOLATILITY</span>
+          <img src="images/market-data-article-1.jpg" alt="Volatility Index Analysis" class="card-image" loading="lazy">
+        </div>
+        <div class="card-body">
+          <div class="card-meta"><span class="card-category">Market Data</span><span class="card-date">Jul 15, 2026</span></div>
+          <h3 class="card-title"><a href="market-data/article-1.html">VIX at 14.20: Decoding Volatility Signals for Q3 Positioning</a></h3>
+          <p class="card-excerpt">Quantitative models identify three volatility scenarios for H2 2026.</p>
+          <div class="card-stats"><span class="card-stat">VIX <span>14.20</span></span><span class="card-stat">1M Fwd <span>16.80</span></span></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-image-wrap">
+          <span class="card-badge">TECHNICAL</span>
+          <img src="images/market-data-article-2.jpg" alt="Sector Momentum Report" class="card-image" loading="lazy">
+        </div>
+        <div class="card-body">
+          <div class="card-meta"><span class="card-category">Market Data</span><span class="card-date">Jun 28, 2026</span></div>
+          <h3 class="card-title"><a href="market-data/article-2.html">Sector Momentum Report: Technology Leads as Defensives Lag</a></h3>
+          <p class="card-excerpt">Our proprietary momentum scanner shows tech strength with a 34% premium.</p>
+          <div class="card-stats"><span class="card-stat">Tech Mo <span>+34%</span></span><span class="card-stat">RSI <span>72</span></span></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-image-wrap">
+          <span class="card-badge">LIQUIDITY</span>
+          <img src="images/market-data-article-3.jpg" alt="Liquidity Depth Analysis" class="card-image" loading="lazy">
+        </div>
+        <div class="card-body">
+          <div class="card-meta"><span class="card-category">Market Data</span><span class="card-date">May 20, 2026</span></div>
+          <h3 class="card-title"><a href="market-data/article-3.html">Order Book Depth: What Liquidity Data Reveals About Market Structure</a></h3>
+          <p class="card-excerpt">Bid-ask spreads and depth-of-book analysis signal shifting market dynamics.</p>
+          <div class="card-stats"><span class="card-stat">Spread <span>0.8bps</span></span><span class="card-stat">Depth <span>$2.4B</span></span></div>
+        </div>
+      </article>
+    </div>
+
+    <!-- Investment Research Section -->
+    <div class="section-header">
+      <span class="section-header-title"><span class="icon">&#128200;</span> Investment Research</span>
+      <a href="investment-research/index.html" class="section-header-link">View All Research &#8594;</a>
+    </div>
+    <div class="card-grid">
+      <article class="card">
+        <div class="card-image-wrap">
+          <span class="card-badge">ALPHA</span>
+          <img src="images/investment-research-article-1.jpg" alt="Factor Alpha Analysis" class="card-image" loading="lazy">
+        </div>
+        <div class="card-body">
+          <div class="card-meta"><span class="card-category">Investment Research</span><span class="card-date">Jul 14, 2026</span></div>
+          <h3 class="card-title"><a href="investment-research/article-1.html">Factor Alpha Decomposition: Where the Excess Returns Are Hiding in 2026</a></h3>
+          <p class="card-excerpt">Proprietary factor models reveal momentum and quality factors outperforming value.</p>
+          <div class="card-stats"><span class="card-stat">Alpha <span>4.8%</span></span><span class="card-stat">Sharpe <span>1.62</span></span></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-image-wrap">
+          <span class="card-badge">PORTFOLIO</span>
+          <img src="images/investment-research-article-2.jpg" alt="Portfolio Optimization" class="card-image" loading="lazy">
+        </div>
+        <div class="card-body">
+          <div class="card-meta"><span class="card-category">Investment Research</span><span class="card-date">Jun 20, 2026</span></div>
+          <h3 class="card-title"><a href="investment-research/article-2.html">Mean-Variance Optimization in Practice: Beyond the Textbook Model</a></h3>
+          <p class="card-excerpt">Real-world constraints require a more sophisticated approach to portfolio construction.</p>
+          <div class="card-stats"><span class="card-stat">Max SR <span>1.84</span></span><span class="card-stat">VaR <span>-8.2%</span></span></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-image-wrap">
+          <span class="card-badge">ASSET ALLOC</span>
+          <img src="images/investment-research-article-3.jpg" alt="Risk Parity Analysis" class="card-image" loading="lazy">
+        </div>
+        <div class="card-body">
+          <div class="card-meta"><span class="card-category">Investment Research</span><span class="card-date">May 12, 2026</span></div>
+          <h3 class="card-title"><a href="investment-research/article-3.html">Risk Parity Revisited: Does Equal Risk Contribution Still Work in 2026?</a></h3>
+          <p class="card-excerpt">We backtest risk parity against 60/40 and endowment models over the last decade.</p>
+          <div class="card-stats"><span class="card-stat">Return <span>+9.2%</span></span><span class="card-stat">Vol <span>7.4%</span></span></div>
+        </div>
+      </article>
+    </div>
+
+    <!-- Ad Slot -->
+    <div class="ad-slot ad-slot-banner"></div>
+
+    <!-- Economic Indicators Section -->
+    <div class="section-header">
+      <span class="section-header-title"><span class="icon">&#127758;</span> Economic Indicators</span>
+      <a href="economic-indicators/index.html" class="section-header-link">View All Indicators &#8594;</a>
+    </div>
+    <div class="card-grid">
+      <article class="card">
+        <div class="card-image-wrap">
+          <span class="card-badge">GDP</span>
+          <img src="images/economic-indicators-article-1.jpg" alt="GDP Growth Analysis" class="card-image" loading="lazy">
+        </div>
+        <div class="card-body">
+          <div class="card-meta"><span class="card-category">Economic Indicators</span><span class="card-date">Jul 12, 2026</span></div>
+          <h3 class="card-title"><a href="economic-indicators/article-1.html">GDP Nowcasting: Tracking Real-Time Economic Growth with Alternative Data</a></h3>
+          <p class="card-excerpt">Satellite imagery, credit card data, and shipping metrics nowcast GDP at 2.8%.</p>
+          <div class="card-stats"><span class="card-stat">Q2 Est <span>+2.8%</span></span><span class="card-stat">Atl Fed <span>+2.6%</span></span></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-image-wrap">
+          <span class="card-badge">INFLATION</span>
+          <img src="images/economic-indicators-article-2.jpg" alt="Inflation Metrics" class="card-image" loading="lazy">
+        </div>
+        <div class="card-body">
+          <div class="card-meta"><span class="card-category">Economic Indicators</span><span class="card-date">Jun 18, 2026</span></div>
+          <h3 class="card-title"><a href="economic-indicators/article-2.html">Supercore Services Inflation: The Fed's Last Mile Problem in Focus</a></h3>
+          <p class="card-excerpt">Shelter and services inflation remains sticky at 3.1%, delaying rate cut expectations.</p>
+          <div class="card-stats"><span class="card-stat">CPI <span>3.1%</span></span><span class="card-stat">Core PCE <span>2.8%</span></span></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-image-wrap">
+          <span class="card-badge">EMPLOYMENT</span>
+          <img src="images/economic-indicators-article-3.jpg" alt="Labor Market Dashboard" class="card-image" loading="lazy">
+        </div>
+        <div class="card-body">
+          <div class="card-meta"><span class="card-category">Economic Indicators</span><span class="card-date">Apr 25, 2026</span></div>
+          <h3 class="card-title"><a href="economic-indicators/article-3.html">Jobs Data Deep Dive: Beyond the Headline Unemployment Number</a></h3>
+          <p class="card-excerpt">Labor force participation, wage growth, and JOLTS data paint a complex picture.</p>
+          <div class="card-stats"><span class="card-stat">U3 <span>3.9%</span></span><span class="card-stat">Wages <span>+4.2%</span></span></div>
+        </div>
+      </article>
+    </div>
+
+    <!-- Wealth Analytics Section -->
+    <div class="section-header">
+      <span class="section-header-title"><span class="icon">&#128176;</span> Wealth Analytics</span>
+      <a href="wealth-analytics/index.html" class="section-header-link">View All Analytics &#8594;</a>
+    </div>
+    <div class="card-grid">
+      <article class="card-horizontal">
+        <img src="images/wealth-analytics-article-1.jpg" alt="HNW Asset Allocation" class="card-image" loading="lazy">
+        <div class="card-body">
+          <div class="card-meta"><span class="card-category">Wealth Analytics</span><span class="card-date">Jul 10, 2026</span></div>
+          <h3 class="card-title"><a href="wealth-analytics/article-1.html">HNW Asset Allocation Trends: $34T in Motion Across Global Private Banks</a></h3>
+          <p class="card-excerpt">Survey of 50+ private banks reveals shifting allocations toward alternatives and private credit.</p>
+          <div class="card-stats"><span class="card-stat">Alts <span>34%</span></span><span class="card-stat">Private Credit <span>+$2.1T</span></span></div>
+        </div>
+      </article>
+      <div class="card-grid" style="margin-bottom:0;">
+        <article class="card">
+          <div class="card-image-wrap">
+            <span class="card-badge">TAX</span>
+            <img src="images/wealth-analytics-article-2.jpg" alt="Tax Optimization" class="card-image" loading="lazy">
+          </div>
+          <div class="card-body">
+            <div class="card-meta"><span class="card-category">Wealth Analytics</span><span class="card-date">Jun 5, 2026</span></div>
+            <h3 class="card-title"><a href="wealth-analytics/article-2.html">Tax-Loss Harvesting Optimization: Algorithmic Approaches for Maximum Alpha</a></h3>
+            <div class="card-stats"><span class="card-stat">Tax Alpha <span>+1.8%</span></span><span class="card-stat">Savings <span>$48K/yr</span></span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-image-wrap">
+            <span class="card-badge">ESTATE</span>
+            <img src="images/wealth-analytics-article-3.jpg" alt="Wealth Transfer" class="card-image" loading="lazy">
+          </div>
+          <div class="card-body">
+            <div class="card-meta"><span class="card-category">Wealth Analytics</span><span class="card-date">May 1, 2026</span></div>
+            <h3 class="card-title"><a href="wealth-analytics/article-3.html">The $84 Trillion Wealth Transfer: Analytics Behind the Great Inheritance</a></h3>
+            <div class="card-stats"><span class="card-stat">Transfer <span>$84T</span></span><span class="card-stat">Timeline <span>20yr</span></span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- Tech Finance Section -->
+    <div class="section-header">
+      <span class="section-header-title"><span class="icon">&#9881;</span> Tech Finance</span>
+      <a href="tech-finance/index.html" class="section-header-link">View All Tech &#8594;</a>
+    </div>
+    <div class="card-grid">
+      <article class="card">
+        <div class="card-image-wrap">
+          <span class="card-badge">AI</span>
+          <img src="images/tech-finance-article-1.jpg" alt="AI Trading Models" class="card-image" loading="lazy">
+        </div>
+        <div class="card-body">
+          <div class="card-meta"><span class="card-category">Tech Finance</span><span class="card-date">Jul 8, 2026</span></div>
+          <h3 class="card-title"><a href="tech-finance/article-1.html">Large Language Models in Quantitative Trading: Performance Benchmarks for 2026</a></h3>
+          <p class="card-excerpt">GPT and Claude models applied to earnings sentiment analysis show 67% directional accuracy.</p>
+          <div class="card-stats"><span class="card-stat">Accuracy <span>67%</span></span><span class="card-stat">Sharpe <span>2.1</span></span></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-image-wrap">
+          <span class="card-badge">DEFI</span>
+          <img src="images/tech-finance-article-2.jpg" alt="DeFi TVL Analysis" class="card-image" loading="lazy">
+        </div>
+        <div class="card-body">
+          <div class="card-meta"><span class="card-category">Tech Finance</span><span class="card-date">Jun 15, 2026</span></div>
+          <h3 class="card-title"><a href="tech-finance/article-2.html">DeFi Protocol Revenue: On-Chain Analytics Reveal the True Value Drivers</a></h3>
+          <p class="card-excerpt">Moving beyond TVL — protocol revenue and fee generation data tell a different story.</p>
+          <div class="card-stats"><span class="card-stat">TVL <span>$84B</span></span><span class="card-stat">Revenue <span>$3.2B</span></span></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-image-wrap">
+          <span class="card-badge">QUANTUM</span>
+          <img src="images/tech-finance-article-3.jpg" alt="Quantum Computing Finance" class="card-image" loading="lazy">
+        </div>
+        <div class="card-body">
+          <div class="card-meta"><span class="card-category">Tech Finance</span><span class="card-date">May 28, 2026</span></div>
+          <h3 class="card-title"><a href="tech-finance/article-3.html">Quantum Advantage in Monte Carlo Simulations: Benchmarks and Projections</a></h3>
+          <p class="card-excerpt">Early quantum computing benchmarks show 100x speedup for portfolio risk calculations.</p>
+          <div class="card-stats"><span class="card-stat">Speedup <span>100x</span></span><span class="card-stat">Qubits <span>1,000+</span></span></div>
+        </div>
+      </article>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo"><span class="accent">FINANCE</span> JOURNAL<span class="dot">.</span></div>
+          <p>Data-driven market intelligence, quantitative research, and institutional-grade analytics. Part of the FinancePulse network.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Data Sections</h4>
+          <ul>
+            <li><a href="market-data/index.html">Market Data</a></li>
+            <li><a href="investment-research/index.html">Investment Research</a></li>
+            <li><a href="economic-indicators/index.html">Economic Indicators</a></li>
+            <li><a href="wealth-analytics/index.html">Wealth Analytics</a></li>
+            <li><a href="tech-finance/index.html">Tech Finance</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>FinancePulse Network</h4>
+          <ul>
+            <li><a href="../index.html">FinancePulse Home</a></li>
+            <li><a href="../insights/index.html">Finance Insights</a></li>
+            <li><a href="../about-us.html">About Us</a></li>
+            <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="../terms-of-service.html">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 FinancePulse. All rights reserved. | Data delayed 15 minutes.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function() {
+      var d = new Date();
+      var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+      var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+      document.getElementById('currentDate').textContent = days[d.getDay()] + ', ' + months[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear();
+      var h = d.getHours();
+      var m = d.getMinutes();
+      var s = d.getSeconds();
+      document.getElementById('currentTime').textContent = (h < 10 ? '0' : '') + h + ':' + (m < 10 ? '0' : '') + m + ':' + (s < 10 ? '0' : '') + s + ' EST';
+    })();
+  </script>
+
+</body>
+</html>
