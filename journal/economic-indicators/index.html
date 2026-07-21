@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Economic Indicators | Macroeconomic Data Analytics Dashboard</title>
+  <meta name="description" content="Real-time macroeconomic data analytics covering GDP nowcasting, inflation metrics, labor market indicators, yield curve dynamics, global PMI trends, and central bank policy tracking.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ambitofinanceiro.com/journal/economic-indicators/">
+  <meta property="og:title" content="Economic Indicators | Macroeconomic Data Analytics Dashboard">
+  <meta property="og:description" content="Real-time macroeconomic data analytics covering GDP, inflation, labor, yield curves, PMI, and central bank policy.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ambitofinanceiro.com/journal/economic-indicators/">
+  <meta property="og:site_name" content="FinancePulse">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Economic Indicators | Macroeconomic Data Dashboard">
+  <meta name="twitter:description" content="Real-time macroeconomic data analytics: GDP nowcasting, inflation trends, labor market metrics, yield curve analysis, PMI monitoring, and central bank policy tracking.">
+  <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+
+  <!-- Top Status Bar -->
+  <div class="status-bar">
+    <div class="container">
+      <div class="status-item"><span class="status-dot live"></span> MARKET OPEN</div>
+      <div class="status-item">S&amp;P 500 <span class="value-up">5,823.10 +1.2%</span></div>
+      <div class="status-item">NASDAQ <span class="value-up">18,340.50 +1.8%</span></div>
+      <div class="status-item">BTC/USD <span class="value-up">$81,450.20 +4.5%</span></div>
+      <div class="status-item">VIX <span class="value-down">14.20 -5.3%</span></div>
+      <div class="status-item" id="currentTime"></div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">
+        <a href="../index.html"><span class="accent">FINANCE</span> JOURNAL<span class="dot">.</span></a>
+      </div>
+      <span class="tagline">Data-Driven Market Intelligence</span>
+      <div class="header-date" id="currentDate"></div>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="main-nav">
+    <div class="container">
+      <a href="../market-data/index.html">Market Data</a>
+      <a href="../investment-research/index.html">Investment Research</a>
+      <a href="index.html" class="active">Economic Indicators</a>
+      <a href="../wealth-analytics/index.html">Wealth Analytics</a>
+      <a href="../tech-finance/index.html">Tech Finance</a>
+      <a href="../../index.html" class="nav-external">FinancePulse Home</a>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <!-- Category Header -->
+    <div class="category-header">
+      <div class="cat-icon">&#127758;</div>
+      <h1>Economic Indicators</h1>
+      <p>Comprehensive macroeconomic data analytics and real-time economic indicator monitoring. Our dashboard tracks GDP growth projections, inflation decomposition, labor market dynamics, yield curve signals, global PMI trends, and central bank policy divergence across the G10 economies.</p>
+    </div>
+
+    <!-- Key Stats Row -->
+    <div class="stats-row">
+      <div class="stat-highlight">
+        <div class="stat-icon">&#128200;</div>
+        <div class="stat-number up">+2.6%</div>
+        <div class="stat-desc">GDP Nowcast (Atl Fed)</div>
+      </div>
+      <div class="stat-highlight">
+        <div class="stat-icon">&#128178;</div>
+        <div class="stat-number down">3.1%</div>
+        <div class="stat-desc">Headline CPI YoY</div>
+      </div>
+      <div class="stat-highlight">
+        <div class="stat-icon">&#128101;</div>
+        <div class="stat-number">3.9%</div>
+        <div class="stat-desc">U3 Unemployment Rate</div>
+      </div>
+      <div class="stat-highlight">
+        <div class="stat-icon">&#128269;</div>
+        <div class="stat-number down">-23bps</div>
+        <div class="stat-desc">2s10s Yield Spread</div>
+      </div>
+    </div>
+
+    <!-- Ad Slot -->
+    <div class="ad-slot ad-slot-banner"></div>
+
+    <!-- Article Cards Grid Row 1 -->
+    <div class="card-grid">
+      <article class="card">
+        <div class="card-image-wrap">
+          <span class="card-badge">GDP</span>
+          <img src="../images/economic-indicators-article-1.jpg" alt="GDP Nowcasting Analysis" class="card-image" loading="lazy">
+        </div>
+        <div class="card-body">
+          <div class="card-meta"><span class="card-category">Economic Indicators</span><span class="card-date">Jul 12, 2026</span></div>
+          <h3 class="card-title"><a href="article-1.html">GDP Nowcasting: Tracking Real-Time Economic Growth with Alternative Data</a></h3>
+          <p class="card-excerpt">Satellite imagery, credit card data, and shipping metrics nowcast GDP at 2.8%.</p>
+          <div class="card-stats"><span class="card-stat">Atl Fed <span>+2.6%</span></span><span class="card-stat">NY Fed <span>+2.4%</span></span></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-image-wrap">
+          <span class="card-badge">INFLATION</span>
+          <img src="../images/economic-indicators-article-2.jpg" alt="Supercore Inflation Analysis" class="card-image" loading="lazy">
+        </div>
+        <div class="card-body">
+          <div class="card-meta"><span class="card-category">Economic Indicators</span><span class="card-date">Jun 18, 2026</span></div>
+          <h3 class="card-title"><a href="article-2.html">Supercore Services Inflation: The Fed's Last Mile Problem in Focus</a></h3>
+          <p class="card-excerpt">Shelter and services inflation remains sticky at 3.8%, delaying rate cut expectations.</p>
+          <div class="card-stats"><span class="card-stat">CPI <span>3.1%</span></span><span class="card-stat">Core PCE <span>2.8%</span></span></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-image-wrap">
+          <span class="card-badge">EMPLOYMENT</span>
+          <img src="../images/economic-indicators-article-3.jpg" alt="Jobs Data Deep Dive" class="card-image" loading="lazy">
+        </div>
+        <div class="card-body">
+          <div class="card-meta"><span class="card-category">Economic Indicators</span><span class="card-date">Apr 25, 2026</span></div>
+          <h3 class="card-title"><a href="article-3.html">Jobs Data Deep Dive: Beyond the Headline Unemployment Number</a></h3>
+          <p class="card-excerpt">Labor force participation, wage growth, and JOLTS data paint a complex picture.</p>
+          <div class="card-stats"><span class="card-stat">U3 <span>3.9%</span></span><span class="card-stat">Wages <span>+4.2%</span></span></div>
+        </div>
+      </article>
+    </div>
+
+    <!-- Card Grid Row 2 -->
+    <div class="card-grid">
+      <article class="card">
+        <div class="card-image-wrap">
+          <span class="card-badge">YIELD CURVE</span>
+          <img src="../images/economic-indicators-article-4.jpg" alt="Yield Curve Dynamics" class="card-image" loading="lazy">
+        </div>
+        <div class="card-body">
+          <div class="card-meta"><span class="card-category">Economic Indicators</span><span class="card-date">Feb 10, 2026</span></div>
+          <h3 class="card-title"><a href="article-4.html">Yield Curve Dynamics: What the 2s10s Spread Tells Us About Recession Risk</a></h3>
+          <p class="card-excerpt">The longest yield curve inversion in modern history and what it signals for 2026.</p>
+          <div class="card-stats"><span class="card-stat">2Y <span>4.45%</span></span><span class="card-stat">10Y <span>4.22%</span></span></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-image-wrap">
+          <span class="card-badge">PMI</span>
+          <img src="../images/economic-indicators-article-5.jpg" alt="Global PMI Dashboard" class="card-image" loading="lazy">
+        </div>
+        <div class="card-body">
+          <div class="card-meta"><span class="card-category">Economic Indicators</span><span class="card-date">Dec 15, 2025</span></div>
+          <h3 class="card-title"><a href="article-5.html">Global PMI Dashboard: Manufacturing and Services Divergence Signals</a></h3>
+          <p class="card-excerpt">Manufacturing contraction in Europe and Japan contrasts with services expansion across all regions.</p>
+          <div class="card-stats"><span class="card-stat">US Mfg <span>52.4</span></span><span class="card-stat">EU Mfg <span>48.7</span></span></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-image-wrap">
+          <span class="card-badge">CENTRAL BANKS</span>
+          <img src="../images/economic-indicators-article-6.jpg" alt="Central Bank Rate Tracker" class="card-image" loading="lazy">
+        </div>
+        <div class="card-body">
+          <div class="card-meta"><span class="card-category">Economic Indicators</span><span class="card-date">Oct 5, 2025</span></div>
+          <h3 class="card-title"><a href="article-6.html">Central Bank Rate Tracker: Divergence Paths Across the G10 in H2 2026</a></h3>
+          <p class="card-excerpt">G10 central banks chart divergent policy paths as the rate-cutting cycle accelerates.</p>
+          <div class="card-stats"><span class="card-stat">Fed <span>4.75-5.00%</span></span><span class="card-stat">ECB <span>3.50%</span></span></div>
+        </div>
+      </article>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo"><span class="accent">FINANCE</span> JOURNAL<span class="dot">.</span></div>
+          <p>Data-driven market intelligence, quantitative research, and institutional-grade analytics. Part of the FinancePulse network.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Data Sections</h4>
+          <ul>
+            <li><a href="../market-data/index.html">Market Data</a></li>
+            <li><a href="../investment-research/index.html">Investment Research</a></li>
+            <li><a href="index.html">Economic Indicators</a></li>
+            <li><a href="../wealth-analytics/index.html">Wealth Analytics</a></li>
+            <li><a href="../tech-finance/index.html">Tech Finance</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>FinancePulse Network</h4>
+          <ul>
+            <li><a href="../../index.html">FinancePulse Home</a></li>
+            <li><a href="../../insights/index.html">Finance Insights</a></li>
+            <li><a href="../../about-us.html">About Us</a></li>
+            <li><a href="../../privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="../../terms-of-service.html">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 FinancePulse. All rights reserved. | Data delayed 15 minutes.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function() {
+      var d = new Date();
+      var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+      var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+      document.getElementById('currentDate').textContent = days[d.getDay()] + ', ' + months[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear();
+      var h = d.getHours();
+      var m = d.getMinutes();
+      var s = d.getSeconds();
+      document.getElementById('currentTime').textContent = (h < 10 ? '0' : '') + h + ':' + (m < 10 ? '0' : '') + m + ':' + (s < 10 ? '0' : '') + s + ' EST';
+    })();
+  </script>
+
+</body>
+</html>

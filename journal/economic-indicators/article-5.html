@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global PMI Dashboard: Manufacturing and Services Divergence Signals | FinancePulse</title>
+  <meta name="description" content="Comprehensive global Purchasing Managers' Index analysis across the US, Eurozone, China, and Japan. Manufacturing vs services divergence, new orders spread, and equity market correlation signals.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ambitofinanceiro.com/journal/economic-indicators/article-5.html">
+  <meta property="og:title" content="Global PMI Dashboard: Manufacturing and Services Divergence Signals">
+  <meta property="og:description" content="PMI analysis across US, Eurozone, China, and Japan. Manufacturing contraction in Europe contrasts with broad services expansion.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://ambitofinanceiro.com/journal/economic-indicators/article-5.html">
+  <meta property="og:site_name" content="FinancePulse">
+  <meta property="article:published_time" content="2025-12-15T08:00:00+00:00">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Global PMI Dashboard: Manufacturing and Services Divergence">
+  <meta name="twitter:description" content="Global PMI analysis: manufacturing weakness vs services strength across major economies.">
+  <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+
+  <!-- Top Status Bar -->
+  <div class="status-bar">
+    <div class="container">
+      <div class="status-item"><span class="status-dot live"></span> MARKET OPEN</div>
+      <div class="status-item">S&amp;P 500 <span class="value-up">5,823.10 +1.2%</span></div>
+      <div class="status-item">NASDAQ <span class="value-up">18,340.50 +1.8%</span></div>
+      <div class="status-item">BTC/USD <span class="value-up">$81,450.20 +4.5%</span></div>
+      <div class="status-item">VIX <span class="value-down">14.20 -5.3%</span></div>
+      <div class="status-item" id="currentTime"></div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">
+        <a href="../index.html"><span class="accent">FINANCE</span> JOURNAL<span class="dot">.</span></a>
+      </div>
+      <span class="tagline">Data-Driven Market Intelligence</span>
+      <div class="header-date" id="currentDate"></div>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="main-nav">
+    <div class="container">
+      <a href="../market-data/index.html">Market Data</a>
+      <a href="../investment-research/index.html">Investment Research</a>
+      <a href="index.html" class="active">Economic Indicators</a>
+      <a href="../wealth-analytics/index.html">Wealth Analytics</a>
+      <a href="../tech-finance/index.html">Tech Finance</a>
+      <a href="../../index.html" class="nav-external">FinancePulse Home</a>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs" style="margin-top:20px;">
+      <a href="../index.html">Home</a><span class="separator">/</span><a href="index.html">Economic Indicators</a><span class="separator">/</span>Global PMI Dashboard
+    </div>
+
+    <!-- Article Hero Image -->
+    <div class="article-hero-wrap">
+      <img src="../images/economic-indicators-article-5.jpg" alt="Global PMI Heat Map" class="article-hero">
+    </div>
+
+    <!-- Article Content -->
+    <div class="article-content-wrapper">
+      <span class="article-category">Economic Indicators</span>
+      <h1>Global PMI Dashboard: Manufacturing and Services Divergence Signals</h1>
+
+      <div class="article-byline">
+        <div class="author-avatar">RP</div>
+        <span class="author-name">Dr. Raj Patel</span>
+        <span class="separator">|</span>
+        <span>December 15, 2025</span>
+        <span class="separator">|</span>
+        <span>13 min read</span>
+      </div>
+
+      <div class="article-body">
+
+        <!-- Data Highlight -->
+        <div class="data-highlight">
+          <div class="data-row">
+            <span class="data-label">US Manufacturing PMI</span>
+            <span class="data-value">52.4</span>
+          </div>
+          <div class="data-row">
+            <span class="data-label">US Services PMI</span>
+            <span class="data-value">54.1</span>
+          </div>
+          <div class="data-row">
+            <span class="data-label">Eurozone Manufacturing PMI</span>
+            <span class="data-value down">48.7</span>
+          </div>
+          <div class="data-row">
+            <span class="data-label">Eurozone Services PMI</span>
+            <span class="data-value">52.8</span>
+          </div>
+          <div class="data-row">
+            <span class="data-label">China Manufacturing PMI</span>
+            <span class="data-value">50.8</span>
+          </div>
+          <div class="data-row">
+            <span class="data-label">China Services PMI</span>
+            <span class="data-value">53.2</span>
+          </div>
+          <div class="data-row">
+            <span class="data-label">Japan Manufacturing PMI</span>
+            <span class="data-value down">49.2</span>
+          </div>
+          <div class="data-row">
+            <span class="data-label">Japan Services PMI</span>
+            <span class="data-value">51.5</span>
+          </div>
+        </div>
+
+        <!-- Key Insight -->
+        <div class="key-insight">
+          <strong>Key Insight:</strong> A pronounced divergence between manufacturing and services PMI readings is unfolding across the global economy. While services sectors remain in expansion territory across all major economies, manufacturing is contracting in the Eurozone (48.7) and Japan (49.2), with China barely above the 50 neutral threshold at 50.8. This bifurcation reflects the lingering effects of goods-sector inventory normalization and the continued rotation of consumer spending toward services, with significant implications for international trade volumes, industrial commodity demand, and equity sector leadership.
+        </div>
+
+        <p>The Purchasing Managers' Index, compiled monthly by S&P Global through surveys of private sector companies, is among the most timely and forward-looking economic indicators available to investors and policymakers. With a publication lag of just a few days after the reference month, PMI data provides a near-real-time snapshot of business conditions across manufacturing and services sectors in over 40 economies. The diffusion index methodology, where readings above 50 signal expansion and below 50 indicate contraction, offers a simple yet powerful framework for tracking the global business cycle and anticipating turning points in economic activity.</p>
+
+        <h2>PMI as a Leading Indicator</h2>
+
+        <p>The PMI's leading indicator properties are well-documented in academic research and widely exploited by practitioners. The manufacturing PMI new orders sub-index typically leads industrial production by one to two months, while the services PMI business activity index leads GDP growth by approximately one quarter. The employment sub-indices provide early signals about labor market conditions ahead of official payroll data, and the input and output price indices offer advance warning of inflationary pressures before they appear in CPI and PPI releases. The composite PMI, which weights manufacturing and services by their respective shares of GDP, has historically tracked the quarter-over-quarter annualized GDP growth rate with a correlation coefficient exceeding 0.80 in developed economies.</p>
+
+        <p>The current global PMI landscape reveals a two-speed economy. The J.P. Morgan Global Composite PMI stands at 52.1, indicating continued expansion but at a pace that has moderated from the post-pandemic surge. Beneath the composite headline, the manufacturing PMI has hovered in contraction territory for much of the past 18 months, reflecting the persistent drag from goods-sector inventory destocking, subdued global trade growth, and the continued normalization of consumer spending patterns away from the extraordinary goods consumption boom of 2020 to 2022. The global services PMI, by contrast, has remained firmly in expansion territory, supported by resilient consumer demand for travel, hospitality, healthcare, and financial services.</p>
+
+        <h2>Manufacturing vs Services: The Divergence Drivers</h2>
+
+        <p>The services-manufacturing divergence reflects structural as well as cyclical forces. On the structural side, the long-term shift of developed economies toward services continues to reduce the manufacturing sector's share of GDP and employment, making services-sector health increasingly determinative of overall economic momentum. In the United States, services account for approximately 77% of private sector output, compared to roughly 11% for manufacturing, meaning that a services PMI reading of 54.1 carries substantially more economic weight than a manufacturing PMI of 52.4. On the cyclical side, the manufacturing sector has borne the brunt of the global inventory cycle correction and the drag from past monetary tightening, which operates with longer lags on capital goods investment than on services consumption.</p>
+
+        <p>The Eurozone's manufacturing contraction at 48.7 is particularly concerning given Germany's role as the region's industrial powerhouse. German manufacturing PMI has printed below 50 for over two years, reflecting the triple headwinds of elevated energy costs following the loss of Russian natural gas, weakening demand from China for German capital goods, and structural competitive challenges in the automotive sector from the electric vehicle transition. The European Central Bank faces the difficult task of calibrating monetary policy for a currency area where services inflation remains robust in southern Europe while manufacturing recession grips Germany and its industrial supply chain partners in Central and Eastern Europe.</p>
+
+        <h2>New Orders vs Inventories Spread and Country Heat Map</h2>
+
+        <p>The spread between the PMI new orders and finished goods inventories sub-indices provides a powerful forward-looking signal for manufacturing output. When new orders outpace inventories, the positive spread presages a production ramp-up as firms rebuild depleted stock levels. When inventories accumulate faster than orders, a negative spread signals impending production cuts. The current new orders-inventories spread is negative for the Eurozone and Japan, consistent with further manufacturing contraction, while the US spread has turned marginally positive, suggesting that the American manufacturing sector may be approaching a cyclical trough.</p>
+
+        <p>A country-level PMI heat map reveals clear regional patterns. The United States stands alone among major developed economies with both manufacturing and services in expansion, supported by the relative resilience of domestic demand, fiscal policy tailwinds from the Inflation Reduction Act and CHIPS Act, and energy cost advantages from domestic production. China's PMI readings, while above 50 in both sectors, have disappointed relative to expectations for a strong post-reopening recovery, reflecting the drag from the property sector downturn, weak consumer confidence, and demographic headwinds. Japan's manufacturing contraction at 49.2 partly reflects temporary auto production disruptions but also underlying competitive challenges in semiconductors and consumer electronics. The UK and Canada complete the G7 picture with services-led expansions and manufacturing sectors hovering near the neutral 50 threshold.</p>
+
+        <h2>Equity Market Correlation and Supply Chain Stress Signals</h2>
+
+        <p>PMI data exhibits a well-established correlation with equity market performance, operating through both the earnings channel and the risk appetite channel. Sectors with high sensitivity to the manufacturing cycle, including industrials, materials, and energy, tend to outperform when the global manufacturing PMI is rising, while defensive sectors such as utilities, consumer staples, and healthcare gain relative strength during manufacturing downturns. The services PMI is more relevant for technology, financials, and consumer discretionary sectors. The current PMI configuration, with services in expansion and manufacturing mixed, supports a barbell equity strategy that pairs services-exposed growth sectors with quality defensives, while underweighting cyclical industrials with high manufacturing beta.</p>
+
+        <p>The PMI suppliers' delivery times sub-index, which lengthens during periods of supply chain stress and shortens when supply chains normalize, provides a real-time gauge of global logistics pressures. After the extreme supply chain disruptions of 2020 to 2022, when delivery times sub-indices across major economies reached all-time highs, the normalization has been swift. Current delivery times readings are at or below their long-run averages in every major economy, indicating that supply chains are operating smoothly and that the goods sector's inflation impulse from supply bottlenecks has fully dissipated. The next supply chain stress signal to monitor will likely emerge from the interaction between inventory restocking demand and the capacity constraints that may develop if the global manufacturing cycle transitions from contraction to expansion in 2026.</p>
+
+      </div>
+
+      <!-- Author Bio -->
+      <div class="author-bio">
+        <div class="author-bio-avatar">RP</div>
+        <div class="author-bio-info">
+          <div class="author-name">Dr. Raj Patel</div>
+          <div class="author-role">Chief Economist</div>
+          <div class="author-desc">PhD Economics from LSE, former World Bank senior economist, 18 years of macroeconomic research experience spanning developed and emerging market economies.</div>
+        </div>
+      </div>
+
+      <!-- Related Articles -->
+      <div class="related-articles">
+        <h3>Related Articles</h3>
+        <div class="related-grid">
+          <article class="card">
+            <div class="card-image-wrap">
+              <span class="card-badge">GDP</span>
+              <img src="../images/economic-indicators-article-1.jpg" alt="GDP Nowcasting" class="card-image" loading="lazy">
+            </div>
+            <div class="card-body">
+              <div class="card-meta"><span class="card-category">Economic Indicators</span><span class="card-date">Jul 12, 2026</span></div>
+              <h3 class="card-title"><a href="article-1.html">GDP Nowcasting: Tracking Real-Time Economic Growth</a></h3>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-image-wrap">
+              <span class="card-badge">CENTRAL BANKS</span>
+              <img src="../images/economic-indicators-article-6.jpg" alt="Central Bank Rates" class="card-image" loading="lazy">
+            </div>
+            <div class="card-body">
+              <div class="card-meta"><span class="card-category">Economic Indicators</span><span class="card-date">Oct 5, 2025</span></div>
+              <h3 class="card-title"><a href="article-6.html">Central Bank Rate Tracker: G10 Divergence Paths</a></h3>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-image-wrap">
+              <span class="card-badge">EMPLOYMENT</span>
+              <img src="../images/economic-indicators-article-3.jpg" alt="Jobs Data Analysis" class="card-image" loading="lazy">
+            </div>
+            <div class="card-body">
+              <div class="card-meta"><span class="card-category">Economic Indicators</span><span class="card-date">Apr 25, 2026</span></div>
+              <h3 class="card-title"><a href="article-3.html">Jobs Data Deep Dive: Beyond the Headline Number</a></h3>
+            </div>
+          </article>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo"><span class="accent">FINANCE</span> JOURNAL<span class="dot">.</span></div>
+          <p>Data-driven market intelligence, quantitative research, and institutional-grade analytics. Part of the FinancePulse network.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Data Sections</h4>
+          <ul>
+            <li><a href="../market-data/index.html">Market Data</a></li>
+            <li><a href="../investment-research/index.html">Investment Research</a></li>
+            <li><a href="index.html">Economic Indicators</a></li>
+            <li><a href="../wealth-analytics/index.html">Wealth Analytics</a></li>
+            <li><a href="../tech-finance/index.html">Tech Finance</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>FinancePulse Network</h4>
+          <ul>
+            <li><a href="../../index.html">FinancePulse Home</a></li>
+            <li><a href="../../insights/index.html">Finance Insights</a></li>
+            <li><a href="../../about-us.html">About Us</a></li>
+            <li><a href="../../privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="../../terms-of-service.html">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2025 FinancePulse. All rights reserved. | Data delayed 15 minutes.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function() {
+      var d = new Date();
+      var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+      var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+      document.getElementById('currentDate').textContent = days[d.getDay()] + ', ' + months[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear();
+      var h = d.getHours();
+      var m = d.getMinutes();
+      var s = d.getSeconds();
+      document.getElementById('currentTime').textContent = (h < 10 ? '0' : '') + h + ':' + (m < 10 ? '0' : '') + m + ':' + (s < 10 ? '0' : '') + s + ' EST';
+    })();
+  </script>
+
+</body>
+</html>
