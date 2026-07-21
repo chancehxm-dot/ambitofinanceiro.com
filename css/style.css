@@ -231,6 +231,64 @@ img {
   margin: 30px auto;
 }
 
+/* Featured Ad Slot — prominent, in-viewport, clearly labeled */
+.ad-slot-featured {
+  max-width: 1200px;
+  min-height: 250px;
+  margin: 0 auto 24px;
+  background: #fef9e7;
+  border: 2px solid #e94560;
+  border-radius: 4px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.ad-slot-featured .ad-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #e94560;
+  color: #fff;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  z-index: 2;
+}
+
+.ad-slot-featured .ad-placeholder {
+  text-align: center;
+  color: #c0392b;
+  padding-top: 30px;
+}
+
+.ad-slot-featured .ad-placeholder .ad-icon {
+  font-size: 36px;
+  margin-bottom: 8px;
+  opacity: 0.5;
+}
+
+.ad-slot-featured .ad-placeholder .ad-text {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #c0392b;
+  opacity: 0.6;
+}
+
+.ad-slot-featured .ad-placeholder .ad-size {
+  font-size: 11px;
+  color: #999;
+  margin-top: 4px;
+}
+
 /* ============================================
    Hero Section
    ============================================ */
