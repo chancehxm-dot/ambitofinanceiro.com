@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Investment Research | Quantitative Analysis &amp; Portfolio Strategy Dashboard</title>
+  <meta name="description" content="Institutional-grade investment research covering factor alpha decomposition, portfolio optimization, risk parity, stress testing, smart beta strategies, and tactical asset allocation from FinancePulse Journal.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ambitofinanceiro.com/journal/investment-research/">
+  <meta property="og:title" content="Investment Research | Quantitative Analysis &amp; Portfolio Strategy">
+  <meta property="og:description" content="Factor models, portfolio optimization, risk analytics, and tactical allocation strategies for sophisticated investors.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ambitofinanceiro.com/journal/investment-research/">
+  <meta property="og:site_name" content="FinancePulse">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Investment Research | Quantitative Analysis &amp; Portfolio Strategy">
+  <meta name="twitter:description" content="Factor models, portfolio optimization, risk analytics, and tactical allocation strategies for sophisticated investors.">
+  <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+
+  <!-- Top Status Bar -->
+  <div class="status-bar">
+    <div class="container">
+      <div class="status-item"><span class="status-dot live"></span> MARKET OPEN</div>
+      <div class="status-item">S&amp;P 500 <span class="value-up">5,823.10 +1.2%</span></div>
+      <div class="status-item">NASDAQ <span class="value-up">18,340.50 +1.8%</span></div>
+      <div class="status-item">BTC/USD <span class="value-up">$81,450.20 +4.5%</span></div>
+      <div class="status-item">VIX <span class="value-down">14.20 -5.3%</span></div>
+      <div class="status-item" id="currentTime"></div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">
+        <a href="../index.html"><span class="accent">FINANCE</span> JOURNAL<span class="dot">.</span></a>
+      </div>
+      <span class="tagline">Data-Driven Market Intelligence</span>
+      <div class="header-date" id="currentDate"></div>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="main-nav">
+    <div class="container">
+      <a href="../market-data/index.html">Market Data</a>
+      <a href="index.html" class="active">Investment Research</a>
+      <a href="../economic-indicators/index.html">Economic Indicators</a>
+      <a href="../wealth-analytics/index.html">Wealth Analytics</a>
+      <a href="../tech-finance/index.html">Tech Finance</a>
+      <a href="../../index.html" class="nav-external">FinancePulse Home</a>
+    </div>
+  </nav>
+
+  <!-- Mini Ticker -->
+  <div class="container">
+    <div class="mini-ticker">
+      <div class="ticker-item">
+        <div class="ticker-symbol">S&amp;P 500</div>
+        <div class="ticker-price">5,823.10</div>
+        <div class="ticker-change value-up">+1.2%</div>
+      </div>
+      <div class="ticker-item">
+        <div class="ticker-symbol">NASDAQ</div>
+        <div class="ticker-price">18,340.50</div>
+        <div class="ticker-change value-up">+1.8%</div>
+      </div>
+      <div class="ticker-item">
+        <div class="ticker-symbol">DOW JONES</div>
+        <div class="ticker-price">41,200.00</div>
+        <div class="ticker-change value-down">-0.3%</div>
+      </div>
+      <div class="ticker-item">
+        <div class="ticker-symbol">BTC/USD</div>
+        <div class="ticker-price">$81,450.20</div>
+        <div class="ticker-change value-up">+4.5%</div>
+      </div>
+      <div class="ticker-item">
+        <div class="ticker-symbol">GOLD</div>
+        <div class="ticker-price">$2,450.00</div>
+        <div class="ticker-change value-down">-0.1%</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Breadcrumbs -->
+  <div class="breadcrumbs" style="max-width:1260px;margin:24px auto 0;padding:0 24px;">
+    <a href="../../index.html">Home</a><span class="separator">/</span>
+    <a href="../index.html">Finance Journal</a><span class="separator">/</span>
+    Investment Research
+  </div>
+
+  <!-- Category Header -->
+  <div class="category-header">
+    <div class="cat-icon">&#128200;</div>
+    <h1>Investment Research</h1>
+    <p>Quantitative factor analysis, modern portfolio theory, risk decomposition, and tactical allocation frameworks for the institutional-grade investor seeking evidence-based alpha generation strategies.</p>
+  </div>
+
+  <div class="container">
+
+    <!-- Key Stats Row -->
+    <div class="stats-row">
+      <div class="stat-highlight">
+        <div class="stat-icon">&#128200;</div>
+        <div class="stat-number up">+4.8%</div>
+        <div class="stat-desc">Momentum Factor YTD</div>
+      </div>
+      <div class="stat-highlight">
+        <div class="stat-icon">&#128202;</div>
+        <div class="stat-number">1.84</div>
+        <div class="stat-desc">Max Sharpe Ratio (EF)</div>
+      </div>
+      <div class="stat-highlight">
+        <div class="stat-icon">&#128269;</div>
+        <div class="stat-number">-8.2%</div>
+        <div class="stat-desc">Portfolio VaR (95%)</div>
+      </div>
+      <div class="stat-highlight">
+        <div class="stat-icon">&#127758;</div>
+        <div class="stat-number">$1.2T</div>
+        <div class="stat-desc">Smart Beta AUM</div>
+      </div>
+    </div>
+
+    <!-- Ad Slot -->
+    <div class="ad-slot ad-slot-banner"></div>
+
+    <!-- Article Cards Grid 3x2 -->
+    <div class="card-grid" style="margin-bottom:60px;">
+      <!-- Article 1 -->
+      <article class="card">
+        <div class="card-image-wrap">
+          <span class="card-badge">ALPHA</span>
+          <img src="../images/investment-research-article-1.jpg" alt="Factor Alpha Decomposition" class="card-image" loading="lazy">
+        </div>
+        <div class="card-body">
+          <div class="card-meta"><span class="card-category">Investment Research</span><span class="card-date">Jul 14, 2026</span></div>
+          <h3 class="card-title"><a href="article-1.html">Factor Alpha Decomposition: Where the Excess Returns Are Hiding in 2026</a></h3>
+          <p class="card-excerpt">Fama-French five-factor model YTD analysis reveals momentum resurgence while value continues its structural underperformance.</p>
+          <div class="card-stats"><span class="card-stat">Mo Factor <span>+4.8%</span></span><span class="card-stat">Quality <span>+3.2%</span></span></div>
+        </div>
+      </article>
+
+      <!-- Article 2 -->
+      <article class="card">
+        <div class="card-image-wrap">
+          <span class="card-badge">PORTFOLIO</span>
+          <img src="../images/investment-research-article-2.jpg" alt="Mean-Variance Optimization" class="card-image" loading="lazy">
+        </div>
+        <div class="card-body">
+          <div class="card-meta"><span class="card-category">Investment Research</span><span class="card-date">Jun 20, 2026</span></div>
+          <h3 class="card-title"><a href="article-2.html">Mean-Variance Optimization in Practice: Beyond the Textbook Model</a></h3>
+          <p class="card-excerpt">Black-Litterman extensions, shrinkage estimators, and real-world constraints transform classical MVO into an investable framework.</p>
+          <div class="card-stats"><span class="card-stat">Max Sharpe <span>1.84</span></span><span class="card-stat">Min Vol <span>7.2%</span></span></div>
+        </div>
+      </article>
+
+      <!-- Article 3 -->
+      <article class="card">
+        <div class="card-image-wrap">
+          <span class="card-badge">ASSET ALLOC</span>
+          <img src="../images/investment-research-article-3.jpg" alt="Risk Parity Revisited" class="card-image" loading="lazy">
+        </div>
+        <div class="card-body">
+          <div class="card-meta"><span class="card-category">Investment Research</span><span class="card-date">May 12, 2026</span></div>
+          <h3 class="card-title"><a href="article-3.html">Risk Parity Revisited: Does Equal Risk Contribution Still Work in 2026?</a></h3>
+          <p class="card-excerpt">We backtest risk parity against 60/40 and endowment models across the last decade of shifting macro regimes.</p>
+          <div class="card-stats"><span class="card-stat">Return <span>+9.2%</span></span><span class="card-stat">Vol <span>7.4%</span></span></div>
+        </div>
+      </article>
+
+      <!-- Article 4 -->
+      <article class="card">
+        <div class="card-image-wrap">
+          <span class="card-badge">RISK</span>
+          <img src="../images/investment-research-article-4.jpg" alt="Stress Testing Portfolios" class="card-image" loading="lazy">
+        </div>
+        <div class="card-body">
+          <div class="card-meta"><span class="card-category">Investment Research</span><span class="card-date">Feb 5, 2026</span></div>
+          <h3 class="card-title"><a href="article-4.html">Stress Testing Your Portfolio: Beyond VaR to Capture Tail Risk</a></h3>
+          <p class="card-excerpt">Conditional VaR, historical scenario analysis, and Monte Carlo methods reveal true tail risk exposures in multi-asset portfolios.</p>
+          <div class="card-stats"><span class="card-stat">CVaR <span>-11.5%</span></span><span class="card-stat">Max DD <span>-22.4%</span></span></div>
+        </div>
+      </article>
+
+      <!-- Article 5 -->
+      <article class="card">
+        <div class="card-image-wrap">
+          <span class="card-badge">SMART BETA</span>
+          <img src="../images/investment-research-article-5.jpg" alt="Smart Beta Scorecard" class="card-image" loading="lazy">
+        </div>
+        <div class="card-body">
+          <div class="card-meta"><span class="card-category">Investment Research</span><span class="card-date">Nov 20, 2025</span></div>
+          <h3 class="card-title"><a href="article-5.html">The Smart Beta Scorecard: Which Alternative Index Strategies Deliver</a></h3>
+          <p class="card-excerpt">Performance attribution across quality, momentum, low vol, equal weight, and fundamental indexing strategies.</p>
+          <div class="card-stats"><span class="card-stat">Quality <span>+5.2%</span></span><span class="card-stat">Momentum <span>+4.8%</span></span></div>
+        </div>
+      </article>
+
+      <!-- Article 6 -->
+      <article class="card">
+        <div class="card-image-wrap">
+          <span class="card-badge">TACTICAL</span>
+          <img src="../images/investment-research-article-6.jpg" alt="Tactical Asset Allocation" class="card-image" loading="lazy">
+        </div>
+        <div class="card-body">
+          <div class="card-meta"><span class="card-category">Investment Research</span><span class="card-date">Sep 10, 2025</span></div>
+          <h3 class="card-title"><a href="article-6.html">Tactical Asset Allocation Signals: A Systematic Framework for Regime Detection</a></h3>
+          <p class="card-excerpt">Hidden Markov Models, leading indicators, and macro factor integration for dynamic allocation decisions.</p>
+          <div class="card-stats"><span class="card-stat">Growth Prob <span>65%</span></span><span class="card-stat">Vol Regime <span>Low</span></span></div>
+        </div>
+      </article>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo"><span class="accent">FINANCE</span> JOURNAL<span class="dot">.</span></div>
+          <p>Data-driven market intelligence, quantitative research, and institutional-grade analytics. Part of the FinancePulse network.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Data Sections</h4>
+          <ul>
+            <li><a href="../market-data/index.html">Market Data</a></li>
+            <li><a href="index.html">Investment Research</a></li>
+            <li><a href="../economic-indicators/index.html">Economic Indicators</a></li>
+            <li><a href="../wealth-analytics/index.html">Wealth Analytics</a></li>
+            <li><a href="../tech-finance/index.html">Tech Finance</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>FinancePulse Network</h4>
+          <ul>
+            <li><a href="../../index.html">FinancePulse Home</a></li>
+            <li><a href="../../about-us.html">About Us</a></li>
+            <li><a href="../../contact.html">Contact</a></li>
+            <li><a href="../../privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="../../terms-of-service.html">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 FinancePulse. All rights reserved. | Data delayed 15 minutes.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function() {
+      var d = new Date();
+      var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+      var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+      document.getElementById('currentDate').textContent = days[d.getDay()] + ', ' + months[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear();
+      var h = d.getHours();
+      var m = d.getMinutes();
+      var s = d.getSeconds();
+      document.getElementById('currentTime').textContent = (h < 10 ? '0' : '') + h + ':' + (m < 10 ? '0' : '') + m + ':' + (s < 10 ? '0' : '') + s + ' EST';
+    })();
+  </script>
+
+</body>
+</html>
