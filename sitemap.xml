@@ -898,6 +898,174 @@
     <priority>0.6</priority>
   </url>
 
+  <!-- LexCare – Homepage -->
+  <url>
+    <loc>https://ambitofinanceiro.com/lexcare/</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- LexCare – Category Index Pages -->
+  <url>
+    <loc>https://ambitofinanceiro.com/lexcare/legal-services/</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ambitofinanceiro.com/lexcare/private-healthcare/</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ambitofinanceiro.com/lexcare/specialized-research/</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- LexCare – Legal Services Articles -->
+  <url>
+    <loc>https://ambitofinanceiro.com/lexcare/legal-services/article-1</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ambitofinanceiro.com/lexcare/legal-services/article-2</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ambitofinanceiro.com/lexcare/legal-services/article-3</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ambitofinanceiro.com/lexcare/legal-services/article-4</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ambitofinanceiro.com/lexcare/legal-services/article-5</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ambitofinanceiro.com/lexcare/legal-services/article-6</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- LexCare – Private Healthcare Articles -->
+  <url>
+    <loc>https://ambitofinanceiro.com/lexcare/private-healthcare/article-1</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ambitofinanceiro.com/lexcare/private-healthcare/article-2</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ambitofinanceiro.com/lexcare/private-healthcare/article-3</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ambitofinanceiro.com/lexcare/private-healthcare/article-4</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ambitofinanceiro.com/lexcare/private-healthcare/article-5</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ambitofinanceiro.com/lexcare/private-healthcare/article-6</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- LexCare – Specialized Research Articles -->
+  <url>
+    <loc>https://ambitofinanceiro.com/lexcare/specialized-research/article-1</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ambitofinanceiro.com/lexcare/specialized-research/article-2</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ambitofinanceiro.com/lexcare/specialized-research/article-3</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ambitofinanceiro.com/lexcare/specialized-research/article-4</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ambitofinanceiro.com/lexcare/specialized-research/article-5</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ambitofinanceiro.com/lexcare/specialized-research/article-6</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- LexCare – Legal / Info Pages -->
+  <url>
+    <loc>https://ambitofinanceiro.com/lexcare/about-us</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ambitofinanceiro.com/lexcare/contact</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ambitofinanceiro.com/lexcare/privacy-policy</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ambitofinanceiro.com/lexcare/terms-of-service</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
   <!-- Market Terminal – Legal / Info Pages -->
   <url>
     <loc>https://ambitofinanceiro.com/markets/about-us.html</loc>
