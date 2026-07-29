@@ -1,0 +1,1023 @@
+/* ============================================
+   Market Terminal — Financial Terminal Theme
+   Completely independent stylesheet
+   ============================================ */
+
+/* Google Fonts: Roboto Slab for headings, Source Code Pro for data */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700;800&family=Source+Code+Pro:wght@300;400;500;600;700&display=swap');
+
+/* ============================================
+   Reset & Base
+   ============================================ */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto Slab', Georgia, serif;
+  color: #2d3436;
+  background-color: #f8f9fa;
+  line-height: 1.7;
+}
+
+a {
+  color: #00b893;
+  text-decoration: none;
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+a:hover {
+  color: #009688;
+  opacity: 0.8;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ============================================
+   Top Bar
+   ============================================ */
+.top-bar {
+  background: #2d3436;
+  color: #b2bec3;
+  font-family: 'Source Code Pro', 'Courier New', monospace;
+  font-size: 11px;
+  padding: 8px 0;
+}
+
+.top-bar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-bar .date {
+  color: #00b893;
+}
+
+.top-bar .tagline {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* ============================================
+   Header
+   ============================================ */
+.site-header {
+  background: #fff;
+  border-bottom: 1px solid #e9ece0;
+  padding: 20px 0;
+}
+
+.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-header .logo {
+  font-family: 'Roboto Slab', Georgia, serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a1a2e;
+  letter-spacing: -0.5px;
+}
+
+.site-header .logo a {
+  color: #1a1a2e;
+}
+
+.site-header .logo .accent {
+  color: #00b893;
+}
+
+.site-header .logo .dot {
+  color: #009688;
+}
+
+.site-header .header-date {
+  font-family: 'Source Code Pro', 'Courier New', monospace;
+  font-size: 11px;
+  color: #6c757d;
+}
+
+/* ============================================
+   Navigation
+   ============================================ */
+.main-nav {
+  background: #1a1a2e;
+  border-bottom: 2px solid #00b893;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.main-nav .container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.main-nav a {
+  display: inline-block;
+  padding: 14px 22px;
+  font-family: 'Roboto Slab', Georgia, serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: #b2bec3;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.main-nav a:hover {
+  color: #00b893;
+}
+
+.main-nav a.active {
+  color: #00b893;
+  border-bottom-color: #00b893;
+}
+
+.main-nav a.nav-external {
+  color: #6c757d;
+  font-weight: 400;
+  margin-left: 12px;
+  padding-left: 28px;
+  border-left: 1px solid #2d3436;
+}
+
+.main-nav a.nav-external:hover {
+  color: #009688;
+}
+
+/* ============================================
+   Hero Section
+   ============================================ */
+.hero-section {
+  position: relative;
+  margin: 32px 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.hero-section .hero-image {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-section .hero-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(26, 26, 46, 0.95) 0%, rgba(26, 26, 46, 0.6) 70%, transparent 100%);
+  padding: 48px 32px 32px;
+}
+
+.hero-section .hero-category {
+  display: inline-block;
+  background: #00b893;
+  color: #fff;
+  font-family: 'Source Code Pro', 'Courier New', monospace;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 4px 10px;
+  border-radius: 3px;
+  margin-bottom: 12px;
+}
+
+.hero-section .hero-title {
+  font-family: 'Roboto Slab', Georgia, serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  letter-spacing: -0.3px;
+}
+
+.hero-section .hero-excerpt {
+  font-size: 15px;
+  color: #d1d1e9;
+  line-height: 1.6;
+  max-width: 580px;
+}
+
+.hero-section .hero-link {
+  display: inline-block;
+  margin-top: 14px;
+  font-family: 'Source Code Pro', 'Courier New', monospace;
+  font-size: 11px;
+  font-weight: 600;
+  color: #00b893;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hero-section .hero-link:hover {
+  color: #009688;
+}
+
+/* ============================================
+   Market Data Tables
+   ============================================ */
+.market-data-table {
+  background: #fff;
+  border: 1px solid #e9ece0;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 28px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.market-data-table h3 {
+  font-family: 'Roboto Slab', Georgia, serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a2e;
+  padding: 16px 20px 12px;
+  border-bottom: 1px solid #e9ece0;
+  margin: 0;
+}
+
+.market-data-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.market-data-table th {
+  font-family: 'Source Code Pro', 'Courier New', monospace;
+  font-size: 10px;
+  font-weight: 600;
+  color: #6c757d;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 10px 16px;
+  text-align: left;
+  border-bottom: 1px solid #e9ece0;
+}
+
+.market-data-table td {
+  font-family: 'Source Code Pro', 'Courier New', monospace;
+  font-size: 13px;
+  padding: 10px 16px;
+  border-bottom: 1px solid #f1f1e8;
+}
+
+.market-data-table tbody tr:nth-child(even) {
+  background: #f8f9fa;
+}
+
+.market-data-table tbody tr:hover {
+  background: #e8f7f4;
+}
+
+.market-data-table .symbol {
+  font-weight: 600;
+  color: #1a1a2e;
+}
+
+.market-data-table .up {
+  color: #00b893;
+  font-weight: 600;
+}
+
+.market-data-table .down {
+  color: #e74c3c;
+  font-weight: 600;
+}
+
+/* ============================================
+   Section Headers
+   ============================================ */
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 32px 0 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e9ece0;
+}
+
+.section-header-title {
+  font-family: 'Roboto Slab', Georgia, serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1a1a2e;
+  letter-spacing: -0.3px;
+}
+
+.section-header-title .icon {
+  color: #00b893;
+  margin-right: 8px;
+}
+
+.section-header-link {
+  font-family: 'Source Code Pro', 'Courier New', monospace;
+  font-size: 10px;
+  color: #00b893;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.section-header-link:hover {
+  color: #009688;
+}
+
+/* ============================================
+   Article Cards — Terminal Style (List Layout)
+   ============================================ */
+.article-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.article-card {
+  display: flex;
+  background: #fff;
+  border: 1px solid #e9ece0;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.article-card:hover {
+  border-color: #00b893;
+  box-shadow: 0 4px 16px rgba(0, 184, 147, 0.08);
+}
+
+.article-card-image {
+  width: 180px;
+  height: 140px;
+  object-fit: cover;
+  flex-shrink: 0;
+  border-right: 1px solid #e9ece0;
+}
+
+.article-card-body {
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.article-card .card-category {
+  font-family: 'Source Code Pro', 'Courier New', monospace;
+  font-size: 9px;
+  color: #00b893;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+
+.article-card .card-date {
+  font-family: 'Source Code Pro', 'Courier New', monospace;
+  font-size: 10px;
+  color: #6c757d;
+  margin-bottom: 8px;
+}
+
+.article-card .card-title {
+  font-family: 'Roboto Slab', Georgia, serif;
+  font-size: 17px;
+  font-weight: 600;
+  color: #1a1a2e;
+  line-height: 1.35;
+  margin-bottom: 6px;
+}
+
+.article-card .card-title a {
+  color: #1a1a2e;
+}
+
+.article-card .card-title a:hover {
+  color: #00b893;
+}
+
+.article-card .card-excerpt {
+  font-size: 13px;
+  color: #6c757d;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.article-card .card-stats {
+  display: flex;
+  gap: 20px;
+  font-family: 'Source Code Pro', 'Courier New', monospace;
+  font-size: 11px;
+  color: #6c757d;
+}
+
+.article-card .card-stat {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.article-card .card-stat .stat-value {
+  color: #00b893;
+  font-weight: 600;
+}
+
+/* ============================================
+   Featured Stats Row
+   ============================================ */
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin: 32px 0;
+}
+
+.stats-row .stat-card {
+  background: #fff;
+  border: 1px solid #e9ece0;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.stats-row .stat-card:hover {
+  border-color: #00b893;
+  transform: translateY(-2px);
+}
+
+.stat-card .stat-label {
+  font-family: 'Source Code Pro', 'Courier New', monospace;
+  font-size: 9px;
+  color: #6c757d;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.stat-card .stat-value {
+  font-family: 'Source Code Pro', 'Courier New', monospace;
+  font-size: 26px;
+  font-weight: 700;
+  color: #1a1a2e;
+  line-height: 1;
+}
+
+.stat-card .stat-value.up { color: #00b893; }
+.stat-card .stat-value.down { color: #e74c3c; }
+
+.stat-card .stat-change {
+  font-family: 'Source Code Pro', 'Courier New', monospace;
+  font-size: 11px;
+  margin-top: 4px;
+}
+
+.stat-card .stat-change.up { color: #00b893; }
+.stat-card .stat-change.down { color: #e74c3c; }
+
+/* ============================================
+   Breadcrumbs
+   ============================================ */
+.breadcrumbs {
+  margin: 20px 0;
+  font-family: 'Source Code Pro', 'Courier New', monospace;
+  font-size: 10px;
+  color: #6c757d;
+}
+
+.breadcrumbs a {
+  color: #6c757d;
+}
+
+.breadcrumbs a:hover {
+  color: #00b893;
+}
+
+.breadcrumbs .separator {
+  margin: 0 8px;
+  color: #e9ece0;
+}
+
+/* ============================================
+   Category Header
+   ============================================ */
+.category-header {
+  text-align: center;
+  padding: 48px 0 36px;
+  margin-bottom: 32px;
+}
+
+.category-header .cat-icon {
+  font-size: 40px;
+  margin-bottom: 12px;
+}
+
+.category-header h1 {
+  font-family: 'Roboto Slab', Georgia, serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 8px;
+  letter-spacing: -0.5px;
+}
+
+.category-header p {
+  font-size: 15px;
+  color: #6c757d;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* ============================================
+   Article Page
+   ============================================ */
+.article-hero {
+  width: 100%;
+  max-height: 480px;
+  object-fit: cover;
+  margin-bottom: 0;
+  border-radius: 8px;
+}
+
+.article-hero-wrap {
+  position: relative;
+  margin-bottom: 36px;
+}
+
+.article-hero-wrap::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background: linear-gradient(to top, #f8f9fa, transparent);
+}
+
+.article-content-wrapper {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.article-content-wrapper .article-category {
+  display: inline-block;
+  font-family: 'Source Code Pro', 'Courier New', monospace;
+  font-size: 10px;
+  font-weight: 700;
+  color: #00b893;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 12px;
+}
+
+.article-content-wrapper h1 {
+  font-family: 'Roboto Slab', Georgia, serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #1a1a2e;
+  line-height: 1.2;
+  margin-bottom: 16px;
+  letter-spacing: -0.3px;
+}
+
+.article-byline {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: 'Source Code Pro', 'Courier New', monospace;
+  font-size: 11px;
+  color: #6c757d;
+  margin-bottom: 28px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e9ece0;
+}
+
+.article-byline .author-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #e8f7f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+  color: #00b893;
+  border: 2px solid #00b893;
+}
+
+.article-byline .author-name {
+  color: #2d3436;
+  font-weight: 500;
+}
+
+.article-byline .separator {
+  color: #e9ece0;
+}
+
+/* Article Body */
+.article-body {
+  font-size: 16px;
+  line-height: 1.85;
+  color: #2d3436;
+}
+
+.article-body p {
+  margin-bottom: 22px;
+}
+
+.article-body h2 {
+  font-family: 'Roboto Slab', Georgia, serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin: 36px 0 14px;
+  padding-left: 16px;
+  border-left: 3px solid #00b893;
+}
+
+.article-body h3 {
+  font-family: 'Roboto Slab', Georgia, serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #2d3436;
+  margin: 28px 0 10px;
+}
+
+/* Data Highlight */
+.data-highlight {
+  background: #f8f9fa;
+  border: 1px solid #e9ece0;
+  border-radius: 8px;
+  padding: 24px;
+  margin: 28px 0;
+  font-family: 'Source Code Pro', 'Courier New', monospace;
+}
+
+.data-highlight .data-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #e9ece0;
+}
+
+.data-highlight .data-row:last-child {
+  border-bottom: none;
+}
+
+.data-highlight .data-label {
+  font-size: 11px;
+  color: #6c757d;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.data-highlight .data-value {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+.data-highlight .data-value.up { color: #00b893; }
+.data-highlight .data-value.down { color: #e74c3c; }
+
+/* Key Insight Box */
+.key-insight {
+  background: #e8f7f4;
+  border-left: 3px solid #00b893;
+  padding: 18px 24px;
+  margin: 28px 0;
+  font-size: 15px;
+  color: #1a1a2e;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+/* ============================================
+   Author Bio
+   ============================================ */
+.author-bio {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #fff;
+  border: 1px solid #e9ece0;
+  border-radius: 8px;
+  padding: 24px;
+  margin: 36px 0;
+}
+
+.author-bio-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #e8f7f4;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Source Code Pro', 'Courier New', monospace;
+  font-size: 16px;
+  font-weight: 700;
+  color: #00b893;
+  border: 2px solid #00b893;
+}
+
+.author-bio-info .author-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin-bottom: 2px;
+}
+
+.author-bio-info .author-role {
+  font-family: 'Source Code Pro', 'Courier New', monospace;
+  font-size: 10px;
+  color: #00b893;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+}
+
+.author-bio-info .author-desc {
+  font-size: 13px;
+  color: #6c757d;
+  line-height: 1.5;
+}
+
+/* ============================================
+   Related Articles
+   ============================================ */
+.related-articles {
+  margin: 44px 0 52px;
+}
+
+.related-articles h3 {
+  font-family: 'Roboto Slab', Georgia, serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e9ece0;
+}
+
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+/* ============================================
+   Ad Slots — Terminal Style
+   ============================================ */
+.ad-slot {
+  background: #f8f9fa;
+  border: 1px dashed #e9ece0;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 32px auto;
+  position: relative;
+}
+
+.ad-slot::before {
+  content: 'ADVERTISEMENT';
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Source Code Pro', 'Courier New', monospace;
+  font-size: 9px;
+  font-weight: 500;
+  color: #6c757d;
+  letter-spacing: 2px;
+}
+
+.ad-slot-banner {
+  max-width: 728px;
+  height: 90px;
+}
+
+.ad-slot-in-content {
+  max-width: 728px;
+  height: 90px;
+  margin: 40px auto;
+}
+
+/* ============================================
+   Footer
+   ============================================ */
+.site-footer {
+  background: #1a1a2e;
+  border-top: 1px solid #00b893;
+  padding: 44px 0 28px;
+  margin-top: 52px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 28px;
+}
+
+.footer-brand .footer-logo {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 6px;
+  letter-spacing: -0.3px;
+}
+
+.footer-brand .footer-logo .accent { color: #00b893; }
+
+.footer-brand p {
+  font-size: 12px;
+  color: #6c757d;
+  line-height: 1.6;
+}
+
+.footer-links h4 {
+  font-family: 'Source Code Pro', 'Courier New', monospace;
+  font-size: 10px;
+  font-weight: 500;
+  color: #6c757d;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 14px;
+}
+
+.footer-links ul {
+  list-style: none;
+}
+
+.footer-links li {
+  margin-bottom: 7px;
+}
+
+.footer-links a {
+  font-size: 13px;
+  color: #6c757d;
+}
+
+.footer-links a:hover {
+  color: #00b893;
+}
+
+.footer-bottom {
+  border-top: 1px solid #2d3436;
+  padding-top: 18px;
+  text-align: center;
+  font-family: 'Source Code Pro', 'Courier New', monospace;
+  font-size: 10px;
+  color: #6c757d;
+}
+
+/* ============================================
+   Utility
+   ============================================ */
+.text-center { text-align: center; }
+.mt-20 { margin-top: 20px; }
+.mb-20 { margin-bottom: 20px; }
+.mb-40 { margin-bottom: 40px; }
+
+/* ============================================
+   Responsive - Tablet
+   ============================================ */
+@media (max-width: 992px) {
+  .hero-section .hero-title {
+    font-size: 26px;
+  }
+
+  .article-card {
+    flex-direction: column;
+  }
+
+  .article-card-image {
+    width: 100%;
+    height: 180px;
+    border-right: none;
+    border-bottom: 1px solid #e9ece0;
+  }
+
+  .stats-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .related-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .article-content-wrapper h1 {
+    font-size: 26px;
+  }
+}
+
+/* ============================================
+   Responsive - Mobile
+   ============================================ */
+@media (max-width: 768px) {
+  .main-nav a {
+    padding: 10px 12px;
+    font-size: 10px;
+  }
+
+  .hero-section .hero-image {
+    height: 280px;
+  }
+
+  .hero-section .hero-title {
+    font-size: 20px;
+  }
+
+  .hero-section .hero-overlay {
+    padding: 24px 16px 20px;
+  }
+
+  .stats-row,
+  .related-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .article-content-wrapper {
+    padding: 0 16px;
+  }
+
+  .article-content-wrapper h1 {
+    font-size: 22px;
+  }
+
+  .data-highlight .data-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .category-header h1 {
+    font-size: 26px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+/* ============================================
+   Print
+   ============================================ */
+@media print {
+  .top-bar, .main-nav, .ad-slot, .site-footer,
+  .hero-section .hero-link, .related-articles, .author-bio,
+  .stats-row, .market-data-table {
+    display: none;
+  }
+
+  .article-content-wrapper {
+    max-width: 100%;
+  }
+
+  body {
+    background: #fff;
+    color: #000;
+  }
+
+  .article-body {
+    color: #000;
+  }
+}
